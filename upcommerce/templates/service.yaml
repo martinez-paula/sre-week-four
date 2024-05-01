@@ -6,7 +6,8 @@ spec:
   selector:
     app: {{ .Release.Name }}-app
   ports:
-    - protocol: TCP
+    - name: upcommerce
+      protocol: TCP
       port: 5000
       targetPort: 5000
   type: NodePort
